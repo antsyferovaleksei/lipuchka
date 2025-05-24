@@ -53,32 +53,32 @@
 					<div class="menu-desktop">
 						<ul class="main-menu">
 							<li class="active-menu">
-								<a href="index.html">Home</a>
+								<a th:href="@{/}">Home</a>
 								<ul class="sub-menu">
-									<li><a href="index.html">Homepage 1</a></li>
-									<li><a href="home-02.html">Homepage 2</a></li>
-									<li><a href="home-03.html">Homepage 3</a></li>
+									<li><a th:href="@{/}">Homepage 1</a></li>
+									<li><a th:href="@{/home-02}">Homepage 2</a></li>
+									<li><a th:href="@{/home-03}">Homepage 3</a></li>
 								</ul>
 							</li>
 
 							<li>
-								<a href="product.html">Shop</a>
+								<a th:href="@{/shop}">Shop</a>
 							</li>
 
 							<li class="label1" data-label1="hot">
-								<a href="shoping-cart.html">Features</a>
+								<a th:href="@{/shoping-cart}">Features</a>
 							</li>
 
 							<li>
-								<a href="blog.html">Blog</a>
+								<a th:href="@{/blog}">Blog</a>
 							</li>
 
 							<li>
-								<a href="about.html">About</a>
+								<a th:href="@{/about}">About</a>
 							</li>
 
 							<li>
-								<a href="contact.html">Contact</a>
+								<a th:href="@{/contact}">Contact</a>
 							</li>
 						</ul>
 					</div>	
@@ -425,9 +425,7 @@
 							</div>
 								
 							<div class="layer-slick1 animated visible-false" data-appear="zoomIn" data-delay="1600">
-								<a href="product.html" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
-									Shop Now
-								</a>
+								<a th:href="@{/shop}" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">Shop Now</a>
 							</div>
 						</div>
 					</div>
@@ -449,9 +447,7 @@
 							</div>
 								
 							<div class="layer-slick1 animated visible-false" data-appear="slideInUp" data-delay="1600">
-								<a href="product.html" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
-									Shop Now
-								</a>
+								<a th:href="@{/shop}" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">Shop Now</a>
 							</div>
 						</div>
 					</div>
@@ -473,9 +469,7 @@
 							</div>
 								
 							<div class="layer-slick1 animated visible-false" data-appear="rotateIn" data-delay="1600">
-								<a href="product.html" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
-									Shop Now
-								</a>
+								<a th:href="@{/shop}" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">Shop Now</a>
 							</div>
 						</div>
 					</div>
@@ -1778,7 +1772,7 @@
 
 							<h4 class="p-b-12">
 								<a href="blog-detail.html" class="mtext-101 cl2 hov-cl1 trans-04">
-									The Great Big List of Men’s Gifts for the Holidays
+									The Great Big List of Men's Gifts for the Holidays
 								</a>
 							</h4>
 

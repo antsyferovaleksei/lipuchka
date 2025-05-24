@@ -3,7 +3,6 @@ package com.antsyferov.shop.controllers;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 
 @Controller
 public class ShopController {
@@ -14,16 +13,21 @@ public class ShopController {
         return "cozastore-master/product";
     }
 
-    @GetMapping("/product-detail/{id}")
-    public String productDetail(@PathVariable Long id, Model model) {
+    @GetMapping("/product-detail")
+    public String productDetail(Model model) {
         model.addAttribute("title", "Деталі товару");
-        model.addAttribute("productId", id);
         return "cozastore-master/product-detail";
     }
 
-    @GetMapping("/cart")
-    public String cart(Model model) {
+    @GetMapping("/shoping-cart")
+    public String features(Model model) {
         model.addAttribute("title", "Кошик");
         return "cozastore-master/shoping-cart";
+    }
+
+    @GetMapping("/blog-detail")
+    public String blogDetail(Model model) {
+        model.addAttribute("title", "Деталі блогу");
+        return "cozastore-master/blog-detail";
     }
 } 
