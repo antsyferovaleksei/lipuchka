@@ -783,5 +783,16 @@ window.addEventListener('resize', setModalOffset);
 </script>
 <!-- End Login/Sign Up Modal -->
 
+<script>
+// Додаю обробник для всіх кнопок Add To Cart (js-addcart-grid)
+$('.js-addcart-grid').each(function(){
+  var nameProduct = $(this).closest('.block2').find('.js-name-b2').html();
+  $(this).on('click', function(e){
+    e.preventDefault();
+    swal(nameProduct, "is added to cart !", "success");
+  });
+});
+</script>
+
 </body>
 </html>
