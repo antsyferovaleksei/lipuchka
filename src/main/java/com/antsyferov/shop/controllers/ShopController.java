@@ -10,24 +10,24 @@ public class ShopController {
     @GetMapping("/shop")
     public String shop(Model model) {
         model.addAttribute("title", "Магазин");
-        return "cozastore-master/product";
+        return "lipuchkastore-master/product";
     }
 
     @GetMapping("/product-detail")
     public String productDetail(Model model) {
         model.addAttribute("title", "Деталі товару");
-        return "cozastore-master/product-detail";
+        return "lipuchkastore-master/product-detail";
     }
 
     @GetMapping("/shoping-cart")
     public String features(Model model) {
         model.addAttribute("title", "Кошик");
-        return "cozastore-master/shoping-cart";
+        return "lipuchkastore-master/shoping-cart";
     }
 
     @GetMapping("/blog-detail")
     public String blogDetail(Model model) {
         model.addAttribute("title", "Деталі блогу");
-        return "cozastore-master/blog-detail";
+        return "lipuchkastore-master/blog-detail";
     }
 } 

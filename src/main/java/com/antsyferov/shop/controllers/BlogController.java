@@ -11,13 +11,13 @@ public class BlogController {
     @GetMapping("/blog")
     public String blog(Model model) {
         model.addAttribute("title", "Блог");
-        return "cozastore-master/blog";
+        return "lipuchkastore-master/blog";
     }
 
     @GetMapping("/blog-detail/{id}")
     public String blogDetail(@PathVariable Long id, Model model) {
         model.addAttribute("title", "Деталі блогу");
         model.addAttribute("blogId", id);
-        return "cozastore-master/blog-detail";
+        return "lipuchkastore-master/blog-detail";
     }
 } 

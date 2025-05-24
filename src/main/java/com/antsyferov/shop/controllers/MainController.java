@@ -10,18 +10,18 @@ public class MainController {
     @GetMapping("/")
     public String home(Model model) {
         model.addAttribute("title", "Головна");
-        return "cozastore-master/index";
+        return "lipuchkastore-master/index";
     }
 
     @GetMapping("/home-02")
     public String home02(Model model) {
         model.addAttribute("title", "Головна 2");
-        return "cozastore-master/home-02";
+        return "lipuchkastore-master/home-02";
     }
 
     @GetMapping("/home-03")
     public String home03(Model model) {
         model.addAttribute("title", "Головна 3");
-        return "cozastore-master/home-03";
+        return "lipuchkastore-master/home-03";
     }
 } 

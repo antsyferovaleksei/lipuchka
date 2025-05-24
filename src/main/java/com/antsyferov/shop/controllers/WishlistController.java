@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class WishlistController {
     @GetMapping("/wishlist")
     public String wishlist() {
-        return "cozastore-master/wishlist";
+        return "lipuchkastore-master/wishlist";
     }
 } 

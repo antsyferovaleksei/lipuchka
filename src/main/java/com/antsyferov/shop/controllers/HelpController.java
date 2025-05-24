@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HelpController {
     @GetMapping("/help-faq")
     public String helpFaq() {
-        return "cozastore-master/help-faq";
+        return "lipuchkastore-master/help-faq";
     }
 } 

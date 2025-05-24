@@ -10,12 +10,12 @@ public class InfoController {
     @GetMapping("/about")
     public String about(Model model) {
         model.addAttribute("title", "Про нас");
-        return "cozastore-master/about";
+        return "lipuchkastore-master/about";
     }
 
     @GetMapping("/contact")
     public String contact(Model model) {
         model.addAttribute("title", "Контакти");
-        return "cozastore-master/contact";
+        return "lipuchkastore-master/contact";
     }
 } 
