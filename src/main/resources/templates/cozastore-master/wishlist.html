@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wishlist</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body class="animsition">
+    <!-- Header (reuse Cozastore header) -->
+    <header th:replace="cozastore-master/index :: header"></header>
+
+    <section class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="mb-4">Your Wishlist is Empty!</h2>
+                <a th:href="@{/shop}" class="btn btn-primary mb-4">Shop Now</a>
+                <div class="row mt-5">
+                    <div class="col-md-4">
+                        <h5>Categories</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Kids</a></li>
+                            <li><a href="#">Women</a></li>
+                            <li><a href="#">Men</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Help</h5>
+                        <ul class="list-unstyled">
+                            <li><a th:href="@{/help-faq}">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Get in Touch</h5>
+                        <p>Any questions? Let us know in store at Coza Store Center 8th floor, 379 Hudson St, New York, NY 10018 US or call us on (+91) 9852421212</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (reuse Cozastore footer) -->
+    <footer th:replace="cozastore-master/index :: footer"></footer>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
